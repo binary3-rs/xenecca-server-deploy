@@ -1,0 +1,5 @@
+# twice a day - every 12 hours
+0 */12 * * * ~/xenecca/scrape_courses.sh >/dev/null
+
+# on every 3rd day of the month
+0 0 */3 * * ~/xenecca/scrape_learning_resources.sh >/dev/null
