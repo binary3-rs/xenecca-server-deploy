@@ -3,7 +3,7 @@
 SERVER_IP=195.201.112.234
  
 cd ~/Documents/binary3/xenecca/xenecca-api && mvn clean install
-sftp root@$SERVER_IP:/home/xenecca <<EOF
+sftp root@$SERVER_IP:/root/xenecca <<EOF
 cd ~/xenecca
 put target/api-0.0.1-SNAPSHOT.jar
 exit

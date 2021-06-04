@@ -3,3 +3,6 @@
 
 # on every 3rd day of the month
 0 0 */3 * * ~/xenecca/scrape_learning_resources.sh >/dev/null
+
+
+0 3 */3 * * bash ~/xenecca/backup_db.sh > logs/backups/$()

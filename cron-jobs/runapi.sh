@@ -1,6 +1,6 @@
 #! /bin/bash
 
-API_EXEC_PATH=~/xenecca
+API_EXEC_PATH=/root/xenecca
 SCREEN_NAME=xenecca-api
 screens=$(screen -ls | grep "[0-9]*\.${SCREEN_NAME}" | sed -E 's/\s+([0-9]+)\..*/\1/')
 for session in $screens; 
