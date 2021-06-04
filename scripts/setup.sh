@@ -16,14 +16,14 @@ screen -d -m elastic-screen
 sudo systemctl start elasticsearch.service
 
 
-# prebaci id_ed.... iz ~/.ssh/
-eval "$(ssh-agent -s)"
-chmod 400 ~/.ssh/id_ed22519
-ssh-add ~/.ssh/id_ed25519
+# # prebaci id_ed.... iz ~/.ssh/
+# eval "$(ssh-agent -s)"
+# chmod 400 ~/.ssh/id_ed22519
+# ssh-add ~/.ssh/id_ed25519
 
-# clone the repo
-cd ~/xenecca
-git@github.com:binary3-rs/xenecca-scrappers.git
+# # clone the repo
+# cd ~/xenecca
+# git@github.com:binary3-rs/xenecca-scrappers.git
 
 # create venv
 sudo apt-get install python3-venv
