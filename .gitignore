@@ -1,5 +1,1 @@
-**/stage
-**/production
-**/fetch_backup_from_server.sh
-**/backup_db.sh
-**/crontab.txt
+deploy/
