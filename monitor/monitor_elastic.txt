@@ -1,0 +1,12 @@
+# Location -> /etc/monit/monitrc
+  # time frame
+  set daemon 1800
+  # logging setup
+  set logfile syslog facility log_daemon
+
+  check host 127.0.0.1 with address 127.0.0.1
+    start program = "/bin/bash /home/binary3/xenecca/es_reset.sh"
+    stop program = "/etc/init.d/elasticsearch stop"
+    if failed port 9200 then restart
+    if 5 restarts within 5 cycles then timeout
+
